@@ -36,6 +36,8 @@ func main() {
 	apirouter.HandleFunc("/users/{id}", CreateUser).Methods("POST")
 
 	fmt.Println("API up and running on port 8080")
+
+	//Allowing all CORS calls currently.
 	log.Fatal(http.ListenAndServe(":8080", handlers.CORS()(apirouter)))
 }
 
