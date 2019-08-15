@@ -30,8 +30,8 @@ user@local:~$ curl 127.0.0.1:8080/users/3
 
 ## Add user:
 ```
-user@local:~$ curl -d '{"id":"5", "firstname":"Tom", "lastname": "Jones", "age":"75"}' -H "Content-Type: application/json" -X POST http://localhost:8080/users/5
-[{"id":"1","firstname":"James","lastname":"Hetfield","age":56},{"id":"2","firstname":"Lars","lastname":"Ulrich","age":55},{"id":"3","firstname":"Kirk","lastname":"Hammett","age":56},{"id":"4","firstname":"Robert","lastname":"Trujillo","age":55},{"id":"5","firstname":"Tom","lastname":"Jones"}]
+user@local:~$ curl -d '{"id":"5", "firstname":"Tom", "lastname": "Jones", "age":75}' -H "Content-Type: application/json" -X POST http://localhost:8080/users/5
+[{"id":"1","firstname":"James","lastname":"Hetfield","age":56},{"id":"2","firstname":"Lars","lastname":"Ulrich","age":55},{"id":"3","firstname":"Kirk","lastname":"Hammett","age":56},{"id":"4","firstname":"Robert","lastname":"Trujillo","age":55},{"id":"5","firstname":"Tom","lastname":"Jones","age":75}]
 ```
 
 ## Delete user:
