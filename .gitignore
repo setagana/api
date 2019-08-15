@@ -11,7 +11,7 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
-# Ignore all that has no extensions (matches bin builds)
+# Ignore all files that has no extensions (bins)
 *
 !*/
 !*.*
