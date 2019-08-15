@@ -3,7 +3,7 @@
 A simple REST API with CRUD operations. The API will use an internal array, built and run on go version go1.10.4 but will probably work fine on earlier versions as well.
 
 
-# Endpoints and CRUD:
+# Endpoints and usage:
 
 ## Health:
 ```
