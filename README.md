@@ -39,3 +39,8 @@ user@local:~$ curl -d '{"id":"5", "firstname":"Tom", "lastname": "Jones", "age":
 user@local:~$ curl -X DELETE http://localhost:8080/users/5
 [{"id":"1","firstname":"James","lastname":"Hetfield","age":56},{"id":"2","firstname":"Lars","lastname":"Ulrich","age":55},{"id":"3","firstname":"Kirk","lastname":"Hammett","age":56},{"id":"4","firstname":"Robert","lastname":"Trujillo","age":55}]
 ```
+
+### Links
+https://jsonapi.org/ | json:api specifications.
+
+https://gist.github.com/subfuzion/08c5d85437d5d4f00e58 | gist with good curl POST examples.
