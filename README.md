@@ -17,7 +17,7 @@ user@local:~$ curl 127.0.0.1:8080/users
 [{"id":"1","firstname":"James","lastname":"Hetfield","age":56},{"id":"2","firstname":"Lars","lastname":"Ulrich","age":55},{"id":"3","firstname":"Kirk","lastname":"Hammett","age":56},{"id":"4","firstname":"Robert","lastname":"Trujillo","age":55}]
 ```
 
-## Show singel user by ID:
+## Show single user by ID:
 ```
 user@local:~$ curl 127.0.0.1:8080/users/1
 {"id":"1","firstname":"James","lastname":"Hetfield","age":56}
