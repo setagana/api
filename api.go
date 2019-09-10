@@ -6,6 +6,8 @@ import (
 	"log"
 	"net/http"
 
+	"google.golang.org/appengine"
+
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
@@ -39,6 +41,7 @@ func main() {
 
 	//Allowing all CORS calls currently.
 	log.Fatal(http.ListenAndServe(":8080", handlers.CORS()(apirouter)))
+	appengine.Main()
 }
 
 // Health check. Polling / outputs "ok"
