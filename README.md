@@ -1,6 +1,6 @@
 # Go API 
 
-A simple REST API with CRUD operations. The API will use an internal array, built and run on go version go1.10.4 but will probably work fine on earlier versions as well.
+A simple REST API with CRUD operations. The API will use an internal array, built and run on go version go1.10.4 (also tested and working fine on 1.12) but will probably work fine on earlier versions as well.
 
 
 # Endpoints and usage:
