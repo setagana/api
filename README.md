@@ -7,15 +7,16 @@ https://golang.org/
 ## How to build it
 
 To build the api from source - you need to install go, pull the dependancies and compile.
+
+Pull the dependancies based on the dependancy list in the repo.
 ```
 user@local:~$ go get -d -v .
 ```
-That will pull the dependancies based on the dependancy list in the repo.
 
+Compile the source code and create a binary for your target platform.
 ```
 user@local:~$ go build
 ```
-Will compile the source code and create a binary for your target platform.
 
 
 # Endpoints and usage:
