@@ -2,9 +2,11 @@
 
 A simple REST API with CRUD operations. The API will use an internal array, built and run on go version go1.12 but will probably work fine on earlier versions as well.
 
+https://golang.org/
+
 ## How to build it
 
-To build the api from source - you need to install go (use 1.12), pull the dependancy and compile.
+To build the api from source - you need to install go, pull the dependancies and compile.
 ```
 user@local:~$ go get -d -v .
 ```
