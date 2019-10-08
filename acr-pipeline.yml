@@ -1,6 +1,4 @@
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:_rr)
-variables:
-  ContainerTag: latest
 trigger:
   batch: true
   branches:
