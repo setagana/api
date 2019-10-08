@@ -1,3 +1,4 @@
+name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:_rr)
 resources:
   containers:
   - container: GoLang112
@@ -19,5 +20,5 @@ jobs:
   steps:
   - script: go get -d -v .
     displayName: Get Go dependencies
-  - script: go build -o $(Build.ArtifactStagingDirectory)
+  - script: go build -o $(Build.ArtifactStagingDirectory)\$(Build.BuildNumber)
     displayName: Build application
