@@ -1,0 +1,23 @@
+resources:
+  containers:
+  - container: GoLang112
+    image: golang:1.12
+trigger:
+  batch: true
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+    - LICENSE
+    - .gitignore
+    - .gcloudignore
+jobs:
+- job: Build
+  container: GoLang112
+  steps:
+  - script: go get -d -v .
+    displayName: Get Go dependencies
+  - script: go build -o $(Build.ArtifactStagingDirectory)
+    displayName: Build application
