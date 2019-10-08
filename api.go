@@ -28,7 +28,7 @@ func main() {
 	users = append(users, User{ID: "1", Firstname: "James", Lastname: "Hetfield", Age: 56})
 	users = append(users, User{ID: "2", Firstname: "Lars", Lastname: "Ulrich", Age: 55})
 	users = append(users, User{ID: "3", Firstname: "Kirk", Lastname: "Hammett", Age: 56})
-	users = append(users, User{ID: "4", Firstname: "Robert", Lastname: "Trujillo", Age: 55})
+	users = append(users, User{ID: "4", Firstname: "Robert", Lastname: "Trujillo", Age: 80})
 
 	var apirouter = mux.NewRouter()
 	apirouter.HandleFunc("/", health).Methods("GET")
