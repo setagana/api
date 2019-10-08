@@ -1,4 +1,6 @@
 name: $(TeamProject)_$(BuildDefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:_rr)
+variables:
+  ContainerTag: latest
 trigger:
   batch: true
   branches:
@@ -19,4 +21,4 @@ jobs:
       containerRegistry: 'mdbtechtest-acr'
       repository: mdbapi2019
       Dockerfile: dockerfile
-      tags: latest
+      tags: $(ContainerTag)
